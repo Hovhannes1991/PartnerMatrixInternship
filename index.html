@@ -1,0 +1,252 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Partner Matrix</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/javascript" src="billboard_js/billboard_min.js"></script>
+    <link rel="stylesheet" type="text/css" href="billboard_js/billboard_min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+        	<img id="logo" src="src/images/logo.jpg" alt="logo">
+        </div>
+        <div class="settings_items">
+        	<div class="settings_icon_container">
+        		<i class="fas fa-tachometer-alt"></i>
+        	</div>
+        	<div class="settings_icon_container">
+        		<i class="fa fa-key"></i>
+        	</div> 
+        	<div class="settings_icon_container">
+        		<i class="fas fa-user"></i>
+        	</div> 
+        	<div class="settings_icon_container">
+        		<i class="fas fa-bullhorn"></i>
+        	</div>
+        	<div class="settings_icon_container">
+        		<i class="fas fa-industry"></i>
+        	</div>
+        	<div class="settings_icon_container">
+        		<i class="fas fa-exchange-alt"></i>
+        	</div>
+        	<div class="settings_icon_container">
+        		<i class="fas fa-cog"></i>
+        	</div> 
+        </div>
+        <div class="queck_selection">
+        	<div class="quick_selection_icon_container">
+        		<i class="fas fa-heart"></i>
+        	</div>
+        	<div class="quick_selection_icon_container">
+        		<i class="far fa-clock"></i>
+        	</div>
+        	<div class="quick_selection_icon_container">
+        		<i class="fas fa-eye"></i>
+        	</div>
+        </div>
+    </nav>
+    <div class="main">
+        <header>
+            <div class="burger">
+                <div class="icon_container">
+                    <i class="fas fa-outdent"></i>
+                </div>
+            </div>
+            <div class="language">
+                <img src="src/images/flag.png" alt="flag" title="british flag">
+                <span>EN</span>
+            </div>
+            <div class="user">
+                <div class="user_image">
+                    <img src="src/images/profile_image.jpg" alt="profile image">
+                </div>
+                <div class="login_info">
+                    <span class="hello">Hello <span id="user_name">Max</span>!</span>
+                    <span class="last_login">last login <span id="last_login-date">Thu Mar 20 2020</span></span>
+                </div>
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </header>
+        <div class="dashboard_container">
+            <div class="dashboard">
+                <i class="fas fa-caret-square-right"></i>
+                <span>Dashboard</span>
+            </div>
+            <div class="add_to_favorites">
+                <i class="fas fa-heart"></i>
+                <span>Add this page to favorites</span>
+            </div>
+        </div>
+        <div class="price_blok">
+            <div class="signups">
+                <div class="price">25</div>
+                <div class="name">
+                    <i class="fas fa-check"></i>
+                    signups
+                </div>
+            </div>
+            <div class="profit">
+                <div class="price">&#36;1000</div>
+                <div class="name">
+                    <i class="fas fa-check"></i>
+                    profit
+                </div>
+            </div>
+            <div class="Commissions">
+                <div class="price">&#36;350</div>
+                <div class="name">                    
+                    <i class="far fa-money-bill-alt"></i>
+                    Commissions
+                </div>
+            </div>
+            <div class="pending_commission">
+                <div class="price">&#36;350</div>
+                <div class="name">
+                    <i class="fas fa-question-circle"></i>
+                    pending commission
+                </div>
+            </div>
+        </div>
+        <div class="graph">
+            <div class="medias_staats">
+                <div class="title">
+                    <div class="name">
+                        <span>Medias Staats</span>
+                    </div>
+                    <div class="periud">
+                        <span>Last Week</span>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="line_effect"></div>
+                <div class="line_effect"></div>
+                <div class="line_effect"></div>
+                <div class="line_effect"></div>
+                <div class="line_effect"></div>
+                <div class="line_effect"></div>
+                <div class="line_effect"></div>
+                <div id="chart_1"></div>
+            </div>
+            <div class="active_medias">
+                <div class="title">
+                    <div>
+                        <span>Active Medias</span>
+                    </div>
+                </div>
+                <div id="chart_2"></div>
+                <div class="legends_for_chart_2">
+                	<div class="chart_2_legend_ctr">
+                		<span class="legend_icon"></span>
+                		<span class="legend_name">CTR</span>
+                		<span class="legend_value">25%</span>
+                	</div>
+                	<div class="chart_2_legend_total_views">
+                		<span class="legend_icon"></span>
+                		<span class="legend_name">Total Views</span>
+                		<span class="legend_value">200</span>
+                	</div>
+                	<div class="chart_2_legend_total_clicks">
+                		<span class="legend_icon"></span>
+                		<span class="legend_name">Total Clicks</span>
+                		<span class="legend_value">65</span>
+                	</div>
+                	<div class="chart_2_legend_signups">
+                		<span class="legend_icon"></span>
+                		<span class="legend_name">Signups</span>
+                		<span class="legend_value">22</span>
+                	</div>
+                </div>
+            </div>
+            <div class="geographic_data">
+                <div class="title">
+                    <div class="name">
+                        <span>Geographic Data</span>
+                    </div>
+                    <div class="periud">
+                        <span>Last Month</span>
+                        <i class="fas fa-angle-down"></i>
+                    </div>                    
+                </div>
+                <div class="map_container">
+                	<div class="rectangles_container">
+                	    <div class="rect"></div>
+                	    <div class="rect"></div>
+                    </div>
+                    <img src="src/images/map.png" alt="map">
+                </div>
+                
+                <div class="affilate_sign_ups">
+                	<span>Affilate Sign Ups</span>
+                	<i class="fas fa-angle-down"></i>
+                </div>
+                <div class="countryes">
+                	<div class="country">                		
+                		<span>1.United States</span>
+                		<span>200</span>
+                	</div>
+                	<div class="country">                		
+                		<span>2.China</span>
+                		<span>65</span>
+                	</div>
+                	<div class="country">                		
+                		<span>3.United Kingdom</span>
+                		<span>22</span>
+                	</div>
+                </div>
+            </div>
+        </div>
+        <div class="users_blok">
+        	<div class="users_top_affilates">
+        		<div class="ub_title">
+        			<span>Top Affilates</span>
+        		</div>
+        		<div class="ub_headers">
+        			<span>ID</span>
+        			<span>Username</span>
+        			<span>Profit(&#36;)</span>
+        			<span>Comission(&#36;)</span>
+        			<span>View</span>
+        		</div>
+        		<div class="top_affilates_users_list"></div>
+        	</div>
+        	<div class="users_signups">
+        		<div class="ub_title">
+        			<span>Signups</span>
+        		</div>
+        		<div class="ub_headers">
+        			<span>ID</span>
+        			<span>Username</span>
+        			<span>Profit(&#36;)</span>
+        			<span>Comission(&#36;)</span>
+        			<span>View</span>
+        		</div>
+        		<div class="signups_users_list"></div>
+        	</div>
+        	<div class="users_pending_commissions">
+        		<div class="ub_title">
+        			<span>Pending commissions</span>
+        		</div>
+        		<div class="ub_headers">
+        			<span>ID</span>
+        			<span>Username</span>
+        			<span>Profit(&#36;)</span>
+        			<span>Comission(&#36;)</span>
+        			<span>View</span>
+        		</div>
+        		<div class="pending_commissions_users_list"></div>
+        	</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/for_billboard.js"></script>
+    <script type="text/javascript" src="js/users.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

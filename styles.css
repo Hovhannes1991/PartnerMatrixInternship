@@ -1,0 +1,436 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	display: grid;
+	width: 980px;
+	height: 810px;
+	background-color: #fff;	
+	grid-template-columns: 60px 920px;
+	margin: 0 auto;
+	font-family: 'Metric regular', Arial, sans-serif;	
+}
+
+.main {
+	display: grid;
+	width: 980px;
+	height: 810px;
+	grid-template-rows: 55px 40px 150px 300px 265px;
+}
+
+nav {
+	display: grid;
+	grid-template-rows: 60px 295px 120px;
+	background-color: #171717;
+	height: 810px;	
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #de1b19;
+}
+
+#logo {
+	width: 48px;
+	height: 48px;	
+}
+
+.settings_items, .queck_selection {
+	display: flex;
+	flex-direction: column;
+	background-color: #222222;	
+}
+
+
+.settings_icon_container, .quick_selection_icon_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 20%;
+	cursor: pointer;
+	transition: background-color 0.5s ease;
+}
+
+.quick_selection_icon_container {
+	border-bottom: 1px solid #242628;
+	height: 33%;
+	background-color: #171717;
+}
+
+
+.settings_icon_container:hover, .quick_selection_icon_container:hover {
+	background-color: darkgreen;
+}
+
+
+.settings_icon_container  .svg-inline--fa {
+	color: white;	
+}
+
+.queck_selection  .svg-inline--fa {
+	color: #878787;	
+}
+
+
+
+header {
+	display: grid;
+	grid-template-columns: 61% 8% 31%;	
+}
+
+.burger, .language, .user {
+	border-left: 1px solid #e1e1e1;
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+}
+
+.burger .icon_container {
+	margin-left: 170px;	
+	font-size: 1.5rem;
+}
+
+.language {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.language img {
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+}
+
+.language span {
+	font-weight: bold;
+	font-family: Metrica, Arial, sans-serif;
+}
+
+
+.user_image img {
+	width: 50px;
+	margin-left: 10px;
+}
+
+.login_info {
+	margin: auto 30px auto 15px;
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+}
+
+
+
+
+
+.dashboard_container {
+	display: flex;
+	justify-content: space-between;	
+	border: 1px solid #cccfd2;
+	background-color: #ececec;
+}
+
+.dashboard {	
+	height: 40px;
+	display: flex;	
+	align-items: center;	
+	font-size: 1.5rem;
+	
+}
+
+.dashboard span {
+	color: rgb(110,110,110);
+	margin-left: 10px;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.add_to_favorites {	
+	background-color: #d8d8d8;
+	display: flex;
+	align-items: center;	
+	padding: 10px;
+}
+
+.add_to_favorites  span {
+	margin-top: 5px;
+	color: rgb(110,110,110);
+}
+
+.add_to_favorites  .fa-heart {	
+	color: rgb(110,110,110);
+}
+
+.price_blok {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;	
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.price_blok > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-left: 1px solid #e1e1e1;
+}
+
+.price {
+	font-size: 50px;
+}
+
+.signups, .signups .fa-check {
+    color: #00acac;
+}
+
+.profit, .profit .fa-check {
+	color: #1f7bb6;
+}
+
+.Commissions, .Commissions .fa-money-bill-alt {
+	color: #fbcf71;
+}
+
+.pending_commission, .pending_commission .fa-question-circle {
+	color: #00acac;
+}
+
+.price_blok .name {
+	color: rgb(110,110,110);
+}
+
+
+.graph {
+	background-color: #2a2a2a;
+	color: #cfcfcf;
+	display: grid;
+	grid-template-columns: 43% 23% 34%; 
+}
+
+.graph .title {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+.graph .name {
+	font-size: 21px;
+}
+
+.graph .periud span{
+	margin-right: 5px;
+}
+
+.medias_staats {
+	height: 290px;
+}
+
+.active_medias {
+	background-color: #222222;
+}
+
+.line_effect {	
+	height:1px;	
+	width: 100%;
+	margin-top: 30px;
+	border-top: 2px solid #262626;
+}
+
+
+.map_container {
+	display: flex;
+}
+
+
+.rectangles_container {
+    margin: 0 20px 0 20px;
+}
+
+.rect {
+	background-color: 878686;
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+}
+
+
+.affilate_sign_ups {
+	margin-left: 200px;	
+	height: 30px;
+	border-top: 1px solid #262626;
+}
+
+.country {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	height: 30px;
+	border-top: 1px solid #262626;
+}
+
+
+.users_blok {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.users_top_affilates, .users_signups, .users_pending_commissions {
+	/*border-left: 1px solid #d4d4d4;*/
+}
+
+.ub_title {
+	font-size: 21px;
+	color: #fff;
+	background-color: #353535;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	border-left: 1px solid #464748;
+}
+
+
+.ub_headers {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 50px;
+	border-left: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d4d4d4;
+	padding-left: 5px;
+}
+
+.ub_headers  span {	
+	text-align: center;	
+	width: 25%;
+	margin-left: 5px;
+}
+
+.top_affilates_users_list {
+	border-left: 1px solid #d4d4d4;	
+}
+
+.user {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.user > span {
+	width: 25%;
+	height: 34px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	font-size: 14px;
+	margin-left: 10px;	
+	color: #747474;	
+}
+
+.user > span > svg {
+	color: #747474;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*customize billboard.js styles*/
+
+#chart_1 {
+	position: relative;
+	top: -228px;
+	width: 100%;
+	height: 80%;	
+}
+
+.tick {
+	fill: white;
+}
+
+.bb-legend-item, .bb-chart-arcs-title {
+	fill: #cfcfcf;
+}
+
+text.bb-chart-arcs-title {
+	font-size: 28px;
+}
+
+.bb-axis line, .bb-axis .domain {
+  stroke: transparent;  
+}
+
+#chart_1 > svg > g {
+	transform: translate(50, 220);
+}
+
+
+#chart_2 {
+	width: 80%;
+	height: 50%;
+	margin: 0 auto;
+}
+
+.legends_for_chart_2 {
+	margin-top: 10px;
+}
+
+.legends_for_chart_2 > div {
+	margin: 5px 5px 5px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.legends_icon, .legend_value {
+	width: 25%;
+}
+
+.legend_name {
+	width:50%;
+}
+
+.legend_icon{
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;	
+}
+
+.chart_2_legend_ctr .legend_icon {
+	border: 2px solid transparent;
+}
+
+.chart_2_legend_total_views .legend_icon {
+    border: 2px solid #fbcf71;
+}
+
+.chart_2_legend_total_clicks .legend_icon {
+    border: 2px solid #1f7bb6;
+}
+
+.chart_2_legend_signups .legend_icon {
+    border: 2px solid #1abc9c;
+}
